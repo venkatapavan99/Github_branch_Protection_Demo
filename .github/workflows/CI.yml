@@ -1,15 +1,17 @@
-name: CI 
+name: PR-CI
+
 on :
   pull_request:
     branches: [main]
+
 jobs:
   build:
-    runs-on: ubuntu-latest
+      name: PR-CI
+      runs-on: ubuntu-latest
   
-    steps:
-    - name: Push code fromfeature to main
-      uses: actions/checkout@v4
+      steps:
+      - name: Push code fromfeature to main
+        uses: actions/checkout@v4   
+      - name: Run demo
+        run : echo "CI pass successfull"
 
-    - name: Run demo
-      run :echo "CI pass successfull   
-  
