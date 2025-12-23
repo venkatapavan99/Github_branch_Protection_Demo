@@ -11,5 +11,4 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Run demo
-      run :echo "CI pass successfull   
-  
+      run : echo "CI pass successfull"
