@@ -1,7 +1,9 @@
 name: PR-CI
+
 on :
   pull_request:
     branches: [main]
+
 jobs:
   build:
     - name: PR- CI
@@ -9,8 +11,8 @@ jobs:
   
       steps:
       	- name: Push code fromfeature to main
-          uses: actions/checkout@v4
-
-      	- name: Run demo
-          run :echo "CI pass successfull   
+          uses: actions/checkout@v4   
   
+        - name: Run demo
+          run : echo "CI pass successfull"
+
