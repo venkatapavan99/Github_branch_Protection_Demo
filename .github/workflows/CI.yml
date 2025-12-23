@@ -10,9 +10,8 @@ jobs:
       runs-on: ubuntu-latest
   
       steps:
-      	- name: Push code fromfeature to main
-          uses: actions/checkout@v4   
-  
-        - name: Run demo
-          run : echo "CI pass successfull"
+      - name: Push code fromfeature to main
+        uses: actions/checkout@v4   
+      - name: Run demo
+        run : echo "CI pass successfull"
 
